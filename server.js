@@ -7,7 +7,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://survey.alchemer.com");
+  res.header("Access-Control-Allow-Origin", "https://suaurl.com");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   res.header("Access-Control-Allow-Headers", "Content-Type, Authorization, x-api-key, x-vercel-protection-bypass");
   next();
@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 // Middleware para permitir o acesso a arquivos JSON
 app.use(express.json());
 
-// Rota para obter frases do banco de dados (JSON)
+// Rota para obter frases do banco de dados (JSON).
 app.get('/frases', (req, res) => {
   fs.readFile(path.join(__dirname, 'data', 'frases.json'), 'utf8', (err, data) => {
     if (err) {
