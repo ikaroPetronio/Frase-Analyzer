@@ -70,7 +70,8 @@ Analisa uma frase enviada no corpo da requisição.
 }
 ```
 
-**Exemplo de retorno**
+**Exemplo de retorno**]
+```
 {
   "frase": "A frase analisada.",
   "palavras_chave": ["chave1", "chave2"],
@@ -78,4 +79,5 @@ Analisa uma frase enviada no corpo da requisição.
   "categoria": "categoria associada",
   "polaridade": "positiva"
 }
+```
 
